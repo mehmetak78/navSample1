@@ -1,0 +1,52 @@
+@import "variables";
+@import "globalElements";
+@import "globalClasses";
+
+
+
+nav {
+  min-height: 8vh;
+  background-color: $nav-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo {
+    color: $white-color;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+  }
+  .nav-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: $light-color;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    li {
+      list-style: none;
+    }
+  }
+  .burger {
+    display: none;
+    div {
+      width: 25px;
+      height: 3px;
+      background-color: $light-color;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+  }
+
+}
+
+
+
+
+@import "mobile";
+
+
